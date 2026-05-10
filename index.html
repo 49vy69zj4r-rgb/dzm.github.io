@@ -7,9 +7,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>给妈妈的礼物</title>
 <link rel="stylesheet" href="styles.css" />
-  <audio autoplay loop>
+<audio id="bgMusic" loop preload="auto">
     <source src="music.mp3" type="audio/mpeg">
-</audio>
 </head>
 <body>
 <div class="petals" aria-hidden="true"></div>
@@ -63,6 +62,17 @@
 </section>
 </main>
 <footer class="footer"><p>用心做的 · 只给你看</p></footer>
+  <script>
+
+document.body.addEventListener("click", () => {
+
+    const music = document.getElementById("bgm");
+
+    music.play();
+
+}, { once:true });
+
+</script>
 <script src="script.js"></script>
 </body>
 </html>
